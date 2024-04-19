@@ -19,7 +19,7 @@
     </delete>
 
     <select id="findEntities" resultMap="healthRecordMap">
-        SELECT * FROM health_record;
+        SELECT * FROM health_record limit 1,2 ;
     </select>
 
 </mapper>

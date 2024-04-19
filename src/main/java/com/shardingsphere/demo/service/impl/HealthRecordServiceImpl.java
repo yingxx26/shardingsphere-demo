@@ -55,4 +55,10 @@ public class HealthRecordServiceImpl implements HealthRecordService {
     	healthTask.setTaskName("TaskName" + i);
     	healthTaskRepository.addEntity(healthTask);
     }
+
+
+	@Override
+	public List<HealthRecord> getHealthRecord() throws SQLException {
+		return healthRecordRepository.findEntities();
+	}
 }
