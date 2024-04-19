@@ -27,4 +27,10 @@ public class HealthRecordServiceTest {
 		List<HealthRecord> x= healthRecordService.getHealthRecord();
 		System.out.println();
 	}
+
+	@Test
+	public void testUpdateHealthRecord() throws Exception {
+	    healthRecordService.updateHealthRecords();
+		System.out.println();
+	}
 }

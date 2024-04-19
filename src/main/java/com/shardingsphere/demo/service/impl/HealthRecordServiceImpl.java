@@ -61,4 +61,20 @@ public class HealthRecordServiceImpl implements HealthRecordService {
 	public List<HealthRecord> getHealthRecord() throws SQLException {
 		return healthRecordRepository.findEntities();
 	}
+
+	@Override
+	public void updateHealthRecords() throws SQLException{
+       List<HealthRecord>  list =new  ArrayList<HealthRecord>();
+
+		HealthRecord healthRecord = new HealthRecord();
+		healthRecord.setRecordId(988055244443357184L);
+		healthRecord.setRemark("Remark" + 11);
+
+		HealthRecord healthRecord2 = new HealthRecord();
+		healthRecord2.setRecordId(988055244955062273L);
+		healthRecord2.setRemark("Remark" + 22);
+		list.add(healthRecord) ;
+
+		healthRecordRepository.batchUpdate(list);
+	}
 }

@@ -18,4 +18,6 @@ public interface HealthRecordService {
 	 */
 	void processHealthRecords() throws SQLException;
 	List<HealthRecord> getHealthRecord() throws SQLException;
+
+	void updateHealthRecords() throws SQLException;
 }

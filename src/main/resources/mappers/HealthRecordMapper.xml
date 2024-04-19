@@ -22,4 +22,11 @@
         SELECT * FROM health_record limit 1,2 ;
     </select>
 
+    <update id="batchUpdate">
+        <foreach collection="recordList" item="item">
+            update health_record set
+            remark = #{item.remark}
+            WHERE record_id = #{item.recordId};
+        </foreach>
+    </update>
 </mapper>
