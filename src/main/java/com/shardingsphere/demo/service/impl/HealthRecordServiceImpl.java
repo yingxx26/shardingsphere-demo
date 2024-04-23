@@ -74,7 +74,7 @@ public class HealthRecordServiceImpl implements HealthRecordService {
 		healthRecord2.setRecordId(988055244955062273L);
 		healthRecord2.setRemark("Remark" + 22);
 		list.add(healthRecord) ;
-
+		list.add(healthRecord2) ;
 		healthRecordRepository.batchUpdate(list);
 	}
 }
