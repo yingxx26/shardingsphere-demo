@@ -36,7 +36,7 @@ public class HealthRecordServiceTest {
 	@Autowired
 	private DataSource dataSource;
 
-	@Qualifier("shardinngSqlSession")
+	@Qualifier("shardingSqlSession")
 	@Autowired
 	private SqlSession sqlSession;
 
