@@ -19,6 +19,10 @@
     </delete>
 
     <select id="findEntities" resultMap="healthRecordMap">
+        SELECT * FROM health_record  ;
+    </select>
+
+    <select id="findHealthRecordPage" resultMap="healthRecordMap">
         SELECT * FROM health_record limit 1,2 ;
     </select>
 

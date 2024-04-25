@@ -13,5 +13,7 @@ import java.util.List;
 public interface HealthRecordRepository extends BaseRepository<HealthRecord, Long> {
 
 
+   List<HealthRecord> findHealthRecordPage();
+
     void batchUpdate(List<HealthRecord> recordList) throws SQLException;
 }

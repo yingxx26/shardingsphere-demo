@@ -17,4 +17,9 @@
     <select id="findEntities" resultMap="userMap">
         SELECT * FROM user;
     </select>
+
+
+    <select id="findAllUsers" resultMap="userMap">
+        SELECT * FROM user;
+    </select>
 </mapper>
